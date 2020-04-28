@@ -94,6 +94,8 @@ p{
 
 .login{
 	height: 170px;
+	padding-right: 0px;
+	margin-right: 0px; 
 }
 
 .form-element{
@@ -102,15 +104,30 @@ p{
 	margin-top: 10px;
 	width : 100%;
 	border-radius: 5px;
+	outline: none;
+	box-shadow : none;
+
+}
+input[type="text"]{
+	border : 0.5px solid grey;
+	box-shadow : none;
+	padding-left: 15px;
+	height : 30px;
+}
+input[type="text"]:focus{
+	border-color: #40c2d6;
+	box-shadow : 0 0 5px #40c2d6;
+}
+
+input[type="checkbox"]:checked{
+	border-color: #34e5eb;
+	box-shadow : 0 0 5px #34e5eb;
 }
 
 label.form-element{
 	margin-top : 5px;
 }
-.input-element{
-	padding-left: 15px;
-	height : 30px;
-}
+
 .form-div{
 	margin-top: 15px;
 	height: 500px;
@@ -122,9 +139,11 @@ label.form-element{
 	border-radius: 5px;
 	font-size: 20px;
 	margin-top: 15px;
+	border : 0.5px solid grey;
 }
 .btn-submit:hover{
 	background-color: #7f8580;
 	color: white;
 	box-decoration-break: slice;
+	font-weight: bold;
 }
